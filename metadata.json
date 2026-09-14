@@ -1,0 +1,6 @@
+{
+  "name": "Mendes & Associados Advogados",
+  "description": "Site institucional do escritório Mendes & Associados. Assessoria jurídica ética, serena e especializada pautada pelo rigor técnico e discrição.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

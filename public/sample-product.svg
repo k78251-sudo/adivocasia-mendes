@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="46%" r="65%">
+      <stop offset="0%" stop-color="#3C4148" />
+      <stop offset="45%" stop-color="#2D3137" />
+      <stop offset="100%" stop-color="#181B1E" />
+    </radialGradient>
+    <linearGradient id="camGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#CCD2D8" />
+      <stop offset="100%" stop-color="#B2B8BF" />
+    </linearGradient>
+    <radialGradient id="lensOuter" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#4B5158" />
+      <stop offset="100%" stop-color="#262A2E" />
+    </radialGradient>
+    <radialGradient id="lensInner" cx="40%" cy="38%" r="60%">
+      <stop offset="0%" stop-color="#1F2327" />
+      <stop offset="100%" stop-color="#111316" />
+    </radialGradient>
+    <filter id="cameraShadow" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="16" stdDeviation="22" flood-color="#090B0D" flood-opacity="0.65" />
+    </filter>
+  </defs>
+
+  <!-- Dark charcoal gradient background -->
+  <rect width="1200" height="800" fill="url(#bgGrad)" />
+
+  <!-- Subtle ambient curved sweeps -->
+  <path d="M-80,240 Q160,140 260,-80" stroke="rgba(255,255,255,0.03)" stroke-width="160" fill="none" />
+  <path d="M960,880 Q1060,620 1280,560" stroke="rgba(255,255,255,0.025)" stroke-width="200" fill="none" />
+
+  <!-- Camera Graphic -->
+  <g filter="url(#cameraShadow)">
+    <!-- Top pentaprism / flash mount -->
+    <path d="M 515,248 L 536,192 Q 544,176 562,176 L 638,176 Q 656,176 664,192 L 685,248 Z" fill="url(#camGrad)" />
+    
+    <!-- Camera Body with smooth rounded corners -->
+    <rect x="415" y="235" width="370" height="260" rx="38" ry="38" fill="url(#camGrad)" />
+
+    <!-- Lens housing outer ring -->
+    <circle cx="600" cy="365" r="90" fill="url(#lensOuter)" />
+    <!-- Middle silver ring -->
+    <circle cx="600" cy="365" r="78" fill="#757D86" />
+    <!-- Inner lens glass -->
+    <circle cx="600" cy="365" r="66" fill="url(#lensInner)" />
+    <!-- Lens reflection flare -->
+    <ellipse cx="578" cy="342" rx="22" ry="13" transform="rotate(-35 578 342)" fill="white" opacity="0.16" />
+
+    <!-- Flash sensor dot -->
+    <circle cx="732" cy="272" r="14" fill="#3D434A" />
+    <circle cx="732" cy="272" r="8" fill="#585F67" />
+  </g>
+
+  <!-- Divider lines and notice text -->
+  <g transform="translate(0, 582)">
+    <!-- Left Divider Line -->
+    <line x1="250" y1="0" x2="350" y2="0" stroke="#727A85" stroke-width="1.5" stroke-linecap="round" />
+    
+    <!-- Line 1: Imagem meramente ilustrativa para -->
+    <text x="600" y="8" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="400" fill="#E2E5E9" letter-spacing="0.25">
+      Imagem meramente ilustrativa para
+    </text>
+
+    <!-- Right Divider Line -->
+    <line x1="850" y1="0" x2="950" y2="0" stroke="#727A85" stroke-width="1.5" stroke-linecap="round" />
+
+    <!-- Line 2: amostra do produto. -->
+    <text x="600" y="46" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="400" fill="#E2E5E9" letter-spacing="0.25">
+      amostra do produto.
+    </text>
+  </g>
+</svg>
