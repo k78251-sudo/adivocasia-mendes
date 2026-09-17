@@ -148,6 +148,11 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
+        {/* Developer Signature */}
+        <div className="pt-4 mt-4 border-t border-[#0E1A30]/80 text-center text-xs text-slate-400">
+          <p>Site desenvolvido por <span className="text-[#C5A880] font-semibold tracking-wide">nova</span></p>
+        </div>
+
       </div>
     </footer>
   );
